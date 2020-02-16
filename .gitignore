@@ -1,0 +1,7 @@
+node_modules
+dist/*
+.vs
+logs/*
+db/*
+!.keep
+.DS_Store

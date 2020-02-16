@@ -1,0 +1,33 @@
+{
+  "name": "typescript_template",
+  "version": "1.0.0",
+  "description": "TypeScript template with a database",
+  "main": "./src/start.ts",
+  "author": "kana00",
+  "license": "MIT",
+  "scripts": {
+    "start": "clear && npx tsc && node ./dist/start.js",
+    "startdev": "clear && npx tsc && cross-env NODE_ENV=dev node ./dist/start.js",
+    "startserver": "clear && npx tsc && npx cross-env NODE_ENV=dev pm2 start ./dist/start.js",
+    "installMongo": "brew install mongodb-community",
+    "mongoshell": "mongo --host localhost:27017",
+    "mongod": "mongod --config ./mongod.yaml",
+    "mongoServiceMacOS": "brew services start mongodb-community",
+    "stopMongoServiceMacOS": "brew serivces stop mongodb-community",
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "i18next": "^19.1.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.7",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.1.28",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^12.0.8",
+    "jest": "^25.1.0"
+  }
+}
