@@ -1,24 +1,18 @@
 // import object of language
-import en from './En';
-import { isString } from 'util';
-import i18next from 'i18next';
+import i18next, { InitOptions } from 'i18next';
+import I18nextCLILanguageDetector from 'i18next-cli-language-detector';
+import en from './Lang_en';
 
 
-i18next.init({
-  lng: 'en',
+
+const i18nConfiguration: InitOptions = {
+  debug: false,
   resources: { en }
-});
-
-
-function translateNumber(oneNumber: number) {
-  return oneNumber.toLocaleString();
 }
 
-// we only need one method from I18n to translate string
-export default function (key: string | number) {
-  if (isString(key)) {
-    return i18next.t(key);
-  } else if (isFinite(key)) {
-    return translateNumber(<number>key);
-  }
-}
+i18next
+  .use(I18nextCLILanguageDetector)
+  .init(i18nConfiguration);
+
+// documentation: https://www.i18next.com/
+// find the correct ISO 639-1 codes: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
