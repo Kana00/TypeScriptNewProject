@@ -8,10 +8,11 @@ This repository is a template with the best current technology. The code is writ
 
 <p style="display:flex; justify-content: center;" align="center">
   <img src="./assets/images/TypeScript_logo.png" width="100" height="100"/>
-  <img src="./assets/images/jest_logo.jpg" width="100" height="100"/>
+  <img src="./assets/images/graphql_logo.png" width="100" height="100"/>
   <img src="./assets/images/mongodb-logo.png" width="100" height="100"/>
   <img src="./assets/images/nodejs.png" width="100" height="100"/>
   <img src="./assets/images/Visual_Studio_Code_1.35_icon.svg" width="100" height="100"/>
+  <img src="./assets/images/jest_logo.jpg" width="100" height="100"/>
 </div>
 
 ## Installation
