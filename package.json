@@ -22,7 +22,7 @@
     "graphql": "^14.6.0",
     "i18next": "^19.1.0",
     "i18next-cli-language-detector": "^1.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.2.7",
     "typescript": "^3.7.5"
   },
